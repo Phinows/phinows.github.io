@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Phiweb</title>
+  </head>
+  <body>
+    <div id="gameWindow">
+      <button type="button" id="startBtn" onclick="init()">点此全屏</button>
+      <div id="landscape" style="display: none;">
+        你需要将手机横屏才能游玩此游戏
+      </div>
+      <div id="top-bar">
+        <span id="combo">
+          <span id="comboN"></span><br /><small>COMBO</small>
+        </span>
+        <span id="score"></span>
+      </div>
+      <span id="tips">TIPS：加油，下次的成绩一定会更好，我们明年见！</span>
+      <div id="areas"></div>
+    </div>
+    <script src="js/main.js" charset="UTF-8"></script>
+    <script src="levels/demo/main.js" charset="UTF-8"></script>
+  </body>
+</html>
