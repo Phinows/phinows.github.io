@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>结算页</title>
+  </head>
+  <body>
+    <div id="gameWindow">
+      <div id="final">
+        <style id="finalAni">
+          #final-panels > * {
+              left: 150%;
+          }
+        </style>
+        <div id="final-panels">
+          <div id="final-score-panel">
+            <div id="final-sc">9999999</div>
+            <div id="final-grade">A</div>
+          </div>
+          <div id="final-acc-panel">
+            <div>
+              <div id="final-combo">999999</div>
+              <small>Max Combo</small>
+            </div>
+            <div class="right">
+              <div id="final-acc">99.99%</div>
+              <small>Accuracy</small>
+            </div>
+          </div>
+          <div id="final-scores-panel">
+            <div><div id="scPerfect">999999</div><small>Perfect</small></div>
+            <div><div id="scGood">0</div><small>Good</small></div>
+            <div><div id="scBad">0</div><small>Bad</small></div>
+            <div><div id="scMiss">0</div><small>Miss</small></div>
+            <div><small class="scLeft">
+              <div>Early</div>
+              <div>Late</div>
+            </small></div>
+            <div><small class="scRight">
+              <div id="scEarly">999999</div>
+              <div id="scLate">999999</div>
+            </small></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        setTimeout(()=>{document.getElementById('finalAni').remove()},500);
+      </script>
+    </div>
+  </body>
+</html>
